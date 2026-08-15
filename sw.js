@@ -1,6 +1,6 @@
 // Money Tracker service worker — keeps the app openable with no signal.
-const VERSION = "mt-v1";
-const SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png"];
+const VERSION = "mt-v2";
+const SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png", "./icon-180.png", "./favicon.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
