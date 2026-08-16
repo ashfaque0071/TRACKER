@@ -1,5 +1,5 @@
 // Money Tracker service worker — keeps the app openable with no signal.
-const VERSION = "mt-v13";
+const VERSION = "mt-v14";
 const SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png", "./icon-180.png", "./favicon.png"];
 
 self.addEventListener("install", e => {
